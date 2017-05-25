@@ -35,6 +35,7 @@
   h3.seminar-title {
     color:black;
     font-family:'Meiryo';
+    font-size: 24px;
     text-align: center;
     border-style: none none solid none;
     border-width: 1px 1px 3px 1px;
@@ -45,16 +46,28 @@
   h4.presenter {
     color:#736d71;
     font-family:'Meiryo';
+    font-size: 20px;
     text-align:right;
+    margin: 0px 0px 0px 0px;
   }
 
   p.agenda {
     font-family:'Meiryo';
     padding: 15px 5px 0px 5px;
   }
+
+  @media print {
+    p.date-time {
+      font-size: 24px;
+    }
+    h3.seminar-title {
+      font-size: 32px;
+    }
+  }
+
   </style>
 </head>
-<body>
+<body class="center-block">
 <div class="jumbotron">
   <div class="container">
   <h1 style="font-size: 60px;">第<span style="font-family:'Meiryo'; font-size: 80px; ">13</span>回

@@ -6645,28 +6645,28 @@ button.close {
   section { display: block; page-break-before: always; }
   pre code {page-break-after: always;}
   @page {
-margin-top:0.4cm;
-margin: 0.5cm;
-}
-p a, code, pre {
-word-wrap: break-word;
-}
-img {display:none;}
- 
-pre a[href]:after {
+    margin-top:0.4cm;
+    margin: 0.5cm;
+  }
+  p a, code, pre {
+    word-wrap: break-word;
+  }
+  img {display:none;}
+
+  pre a[href]:after {
     content: ""; }
- 
- 
-pre abbr[title]:after {
+
+    pre abbr[title]:after {
     content: ""; }
- 
-pre   .ir a:after,
-  pre a[href^="javascript:"]:after,
-  pre a[href^="#"]:after {
-    content: ""; }
- 
+
+  pre   .ir a:after,
+    pre a[href^="javascript:"]:after,
+    pre a[href^="#"]:after {
+    content: "";
+  }
+
 .no-print {display:none;}
- 
+
 }
 @media print {
   .visible-print {
@@ -6687,10 +6687,10 @@ pre   .ir a:after,
   display: none !important;
 }
 @media print {
-  .container {
+  .container, .jumbotron {
     width: 1470px;
   }
-  
+
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
